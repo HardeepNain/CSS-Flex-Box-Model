@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        /* Reset basic margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the header, content, and footer */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Content (main area) */
+.content {
+    display: flex;               /* Enables flexbox */
+    flex-grow: 1;                /* Ensures the content area grows to fill available space */
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+/* Two-column layout */
+.column {
+    padding: 20px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left column */
+.column-left {
+    flex: 2;                     /* Occupies more space */
+    background-color: #f39c12;
+}
+
+/* Right column */
+.column-right {
+    flex: 2;                     /* Occupies less space */
+    background-color: #2ecc71;
+}
+
+/* Footer */
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+
+    <main class="content">
+        <section class="column column-left">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis maiores repudiandae at, doloribus non obcaecati, molestiae excepturi quam ut nemo adipisci consequuntur. Harum cum error voluptate earum, obcaecati tempora magni.</p>
+        </section>
+        <section class="column column-right">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quae aspernatur dolorem eos voluptatum. Nisi nemo accusamus cumque in aspernatur autem, repellat ipsum veritatis quia nulla, quibusdam assumenda fugiat obcaecati.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
